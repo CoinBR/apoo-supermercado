@@ -6,7 +6,26 @@ import java.util.List;
 
 public class Promocao {
 	
-	//TODO: Add Descricao
+	/* Promoção, definida por uma lista de "ItemPromocao". Os quais são produtos com ou sem desconto.
+	 * 
+	 * Após comprar alguns itens em seu valor normal, o cliente conseguirá descontos em produtos posteriores.
+	 * 
+	 * Tais descontos podem ser dados como:
+	 * 		Porcentagem do valor dessa instância do produto (ex: 50 %)
+	 * 		Prefixando o valor dessa instância do produto (ex: R$ 0,01)
+	 * 
+	 * Exemplos:
+	 * 
+	 * (Ao comprar 2 Fraldas, a segunda sai por 50% do valor)
+	 * new Promocao();
+	 * Promocao.AddItem()(new ItemPromocao(fralda, 0));
+	 * Promocao.AddItem()(new ItemPromocao(fralda, 0.5));
+	 * 
+	 * (Ao comprar 3 sabonetes, o cliente pode levar uma duzia de ovos por R$ 0,01
+     * new Promocao();
+	 * Promocao.AddItem()(new ItemPromocao(fralda, 0), 3);
+	 * Promocao.AddItem()(new ItemPromocao(fralda, 0, 0.01));
+	 */
 	
 	private List<ItemPromocao> itens = new ArrayList<>();
 	
